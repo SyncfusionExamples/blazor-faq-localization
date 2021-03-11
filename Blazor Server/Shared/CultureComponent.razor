@@ -1,0 +1,11 @@
+﻿@inject NavigationManager UriHelper
+
+<button class="btn btn-secondary" @onclick="OnSelected">Change Language</button>
+
+@code {
+
+    private void OnSelected()
+    {
+        UriHelper.NavigateTo("Culture", true);
+    }
+}
